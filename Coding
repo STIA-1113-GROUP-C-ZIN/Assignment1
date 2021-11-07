@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class OneA {
+
+	public static void main(String[] args) {		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number of item: ");	
+		double item =sc.nextDouble();
+	    System.out.println("Enter price of first item: RM ");	   
+		double price1 =sc.nextDouble();
+	    System.out.println("Enter quantity of first item: ");	 
+		int quantity1= sc.nextInt();
+		double total1 = price1*quantity1;
+		
+		System.out.println("Enter price of second item: RM ");	   
+		double price2 =sc.nextDouble();
+		System.out.println("Enter quantity of second item: ");	 
+		int quantity2= sc.nextInt();
+		double total2 = price2*quantity2;
+
+		System.out.println("Enter price of third item: RM ");	   
+		double price3 =sc.nextDouble();
+		System.out.println("Enter quantity of third item: ");	 
+		int quantity3= sc.nextInt();
+		double total3 = price3*quantity3;
+
+
+		double totalprice = total1 + total2 +total3;
+	 
+		if (totalprice < 100.00) {
+			double discountreceived = (totalprice*10)/100;
+			double x = totalprice - discountreceived;
+		       System.out.printf("Total price       : RM%.2f%n" , totalprice);
+		       System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+		       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+		       }
+		
+		if (totalprice > 100.00) {
+			double discountreceived = (totalprice*20)/100;
+			double x = totalprice - discountreceived;
+		       System.out.printf("Total price       : RM%.2f%n" , totalprice);
+		       System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+		       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+		       }	
+	}
+
+		
+	}
